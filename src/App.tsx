@@ -145,7 +145,7 @@ function App() {
             data-cy="get-age-btn"
             onClick={getAge}
             disabled={false}
-            className='w-16 h-16 bg-primary rounded-full absolute right-1/2 translate-x-1/2 sm:right-0 sm:translate-x-0 -translate-y-8 grid place-content-center outline-none ring-1 ring-inset focus:ring-2 focus:ring-inset ring-primary disabled:bg-[#C3A6FF]'
+            className='w-16 h-16 bg-primary hover:bg-[#C3A6FF] rounded-full absolute right-1/2 translate-x-1/2 sm:right-0 sm:translate-x-0 -translate-y-8 grid place-content-center outline-none ring-1 ring-inset focus:ring-2 focus:ring-inset ring-primary disabled:bg-[#C3A6FF] hover:ring-[#C3A6FF]'
           >
             <img src={arrowDown} aria-hidden="true" />
             <span className="sr-only">Submit</span>
@@ -155,8 +155,8 @@ function App() {
       
       <div>
         <dl data-cy="age">
-          <dt className='flex items-end font-extrabold italic text-6xl tracking-tighter'>
-            <span data-cy="years" className='h-14 w-20 inline-block text-primary relative overflow-hidden group'>
+          <dt className='flex items-end font-extrabold italic text-6xl sm:text-8xl tracking-tighter'>
+            <span data-cy="years" className='h-14 w-20 sm:h-24 sm:w-32 inline-block text-primary relative overflow-hidden group'>
               {yearsOld === 0 
                 ? '- -'
                 : <>
@@ -180,8 +180,8 @@ function App() {
               }
             </span> years
           </dt>
-          <dt className='flex items-end font-extrabold italic text-6xl tracking-tighter'>
-            <span data-cy="months" className='h-14 w-20 inline-block text-primary relative overflow-hidden group'>
+          <dt className='flex items-end font-extrabold italic text-6xl sm:text-8xl tracking-tighter'>
+            <span data-cy="months" className='h-14 w-20 sm:h-24 sm:w-32 inline-block text-primary relative overflow-hidden group'>
               {monthsOld === 0
                 ? '- -'
                 : <>
@@ -206,8 +206,8 @@ function App() {
               }
             </span> months
           </dt>
-          <dt className='flex items-end font-extrabold italic text-6xl tracking-tighter'>
-            <span data-cy="days" className='h-14 w-20 inline-block text-primary relative overflow-hidden group'>
+          <dt className='flex items-end font-extrabold italic text-6xl sm:text-8xl tracking-tighter'>
+            <span data-cy="days" className='h-14 w-20 sm:h-24 sm:w-32 inline-block text-primary relative overflow-hidden group'>
               {daysOld === 0
                 ? '- -'
                 : <>
