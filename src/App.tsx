@@ -162,10 +162,10 @@ function App() {
                 : <>
                     <div
                       className={classNames(
-                        isAnimating ? "animation" : "",
+                        isAnimating ? "animation-1" : "",
                         "absolute bottom-0 flex flex-col"
                       )}
-                      onAnimationEnd={() => updateAnimating(false)}
+                      // onAnimationEnd={() => updateAnimating(false)}
                     >
                       {[...Array(yearsOld + 1)].map((_, index) => (
                         <span 
@@ -187,10 +187,10 @@ function App() {
                 : <>
                     <div 
                       className={classNames(
-                        isAnimating ? "animation" : "",
+                        isAnimating ? "animation-2" : "",
                         "absolute bottom-0 flex flex-col"
                       )}
-                      onAnimationEnd={() => updateAnimating(false)}
+                      // onAnimationEnd={() => updateAnimating(false)}
                     >
                       {[...Array(monthsOld + 1)].map((_, index) => (
                         <span 
@@ -213,7 +213,7 @@ function App() {
                 : <>
                     <div 
                       className={classNames(
-                        isAnimating ? "animation" : "",
+                        isAnimating ? "animation-3" : "",
                         "absolute bottom-0 flex flex-col"
                       )}
                       onAnimationEnd={() => updateAnimating(false)}

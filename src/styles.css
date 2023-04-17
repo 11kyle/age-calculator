@@ -1,6 +1,16 @@
-.animation {
+.animation-1 {
+  animation: my-animation;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(.5,0,.5,1)
+}
+.animation-2 {
   animation: my-animation;
   animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(.5,0,.5,1)
+}
+.animation-3 {
+  animation: my-animation;
+  animation-duration: 2s;
   animation-timing-function: cubic-bezier(.5,0,.5,1)
 }
 .remove-animation {
