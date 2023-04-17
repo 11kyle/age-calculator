@@ -100,7 +100,7 @@ function App() {
   }
 
   return (
-    <div className='bg-white rounded-t-3xl rounded-l-3xl rounded-br-[100px] max-w-[736px] px-4 py-12 lg:p-14 mx-4 md:mx-auto my-10 sm:my-20'>
+    <div className='bg-white rounded-t-3xl rounded-l-3xl rounded-br-[100px] sm:rounded-br-[200px] max-w-[736px] px-4 py-12 lg:p-14 mx-4 md:mx-auto my-10 sm:my-20'>
       <div className='grid grid-cols-3 sm:grid-cols-4 gap-1 sm:gap-8'>
         <div>
           <Select 
