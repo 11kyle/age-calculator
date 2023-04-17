@@ -154,8 +154,8 @@ function App() {
       </div>
       
       <div>
-        <dl data-cy="age">
-          <dt className='flex items-end font-extrabold italic text-6xl sm:text-8xl tracking-tighter'>
+        <div data-cy="age">
+          <div className='flex items-end font-extrabold italic text-6xl sm:text-8xl tracking-tighter'>
             <span data-cy="years" className='h-14 w-20 sm:h-24 sm:w-32 inline-block text-primary relative overflow-hidden group'>
               {yearsOld === 0 
                 ? '- -'
@@ -170,7 +170,6 @@ function App() {
                       {[...Array(yearsOld + 1)].map((_, index) => (
                         <span 
                           key={index}
-                          
                         >
                           {index}
                         </span>
@@ -179,8 +178,8 @@ function App() {
                   </>
               }
             </span> years
-          </dt>
-          <dt className='flex items-end font-extrabold italic text-6xl sm:text-8xl tracking-tighter'>
+          </div>
+          <div className='flex items-end font-extrabold italic text-6xl sm:text-8xl tracking-tighter'>
             <span data-cy="months" className='h-14 w-20 sm:h-24 sm:w-32 inline-block text-primary relative overflow-hidden group'>
               {monthsOld === 0
                 ? '- -'
@@ -195,8 +194,6 @@ function App() {
                       {[...Array(monthsOld + 1)].map((_, index) => (
                         <span 
                           key={index}
-                          
-                          
                         >
                           {index}
                         </span>
@@ -205,8 +202,8 @@ function App() {
                   </>
               }
             </span> months
-          </dt>
-          <dt className='flex items-end font-extrabold italic text-6xl sm:text-8xl tracking-tighter'>
+          </div>
+          <div className='flex items-end font-extrabold italic text-6xl sm:text-8xl tracking-tighter'>
             <span data-cy="days" className='h-14 w-20 sm:h-24 sm:w-32 inline-block text-primary relative overflow-hidden group'>
               {daysOld === 0
                 ? '- -'
@@ -221,8 +218,6 @@ function App() {
                       {[...Array(daysOld + 1)].map((_, index) => (
                         <span 
                           key={index}
-                          
-                          
                         >
                           {index}
                         </span>
@@ -231,8 +226,8 @@ function App() {
                   </>
               }
             </span> days
-          </dt>
-        </dl>
+          </div>
+        </div>
       </div>
     </div>
   )
