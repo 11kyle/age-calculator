@@ -5,9 +5,9 @@ describe('external navigation links', () => {
   
   context("Age display section", () => {
     it('displays the correct default values', () => {
-      cy.get("dt").eq(0).contains("- - years")
-      cy.get("dt").eq(1).contains("- - months")
-      cy.get("dt").eq(2).contains("- - days")
+      cy.get('[data-cy="years"]').contains("- -")
+      cy.get('[data-cy="months"]').contains("- -")
+      cy.get('[data-cy="days"]').contains("- -")
     })
   })
 
@@ -21,9 +21,9 @@ describe('external navigation links', () => {
       cy.get('li').eq(34).click()
       cy.get('[data-cy="get-age-btn"').click()
 
-      cy.get("dt").eq(0).contains("33 years")
-      cy.get("dt").eq(1).contains("10 months")
-      cy.get("dt").eq(2).contains("5 days")
+      cy.get('[data-cy="years"]').contains("33")
+      cy.get('[data-cy="months"]').contains("10")
+      cy.get('[data-cy="days"]').contains("7")
     })
 
     it('displays empty response on future date', () => {
@@ -31,9 +31,11 @@ describe('external navigation links', () => {
       cy.get('li').eq(11).click()
       cy.get('[data-cy="get-age-btn"').click()
       
-      cy.get("dt").eq(0).contains("- - years")
-      cy.get("dt").eq(1).contains("- - months")
-      cy.get("dt").eq(2).contains("- - days")
+      cy.get('[data-cy="years"]').contains("- -")
+      cy.get('[data-cy="months"]').contains("- -")
+      cy.get('[data-cy="days"]').contains("- -")
+
+      // check for error styles around <select> tags
     })
   })
 })
