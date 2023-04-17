@@ -1,0 +1,18 @@
+.animation {
+  animation: my-animation;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(.5,0,.5,1)
+}
+.remove-animation {
+  animation-name: none;
+}
+
+@keyframes my-animation {
+  0% {
+    bottom: 0px;
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
